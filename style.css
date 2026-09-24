@@ -421,3 +421,190 @@ footer {
 footer p {
   text-align: center;
 }
+
+/* ================================
+   WORK EXPERIENCE TIMELINE
+================================ */
+
+.timeline {
+    width: 85%;
+    max-width: 1000px;
+    margin: 4rem auto 2rem;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 150px 40px 1fr;
+    column-gap: 1.5rem;
+    min-height: 300px;
+}
+
+
+/* DATE */
+
+.timeline-date {
+    text-align: right;
+    padding-top: 0.4rem;
+    font-size: 0.95rem;
+    color: rgb(85, 85, 85);
+}
+
+
+/* CENTER LINE */
+
+.timeline-line {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Vertical line */
+
+.timeline-line::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    bottom: 0;
+    width: 1px;
+    background-color: rgb(180, 180, 180);
+}
+
+
+/* Circle */
+
+.timeline-dot {
+    position: relative;
+    z-index: 2;
+
+    width: 13px;
+    height: 13px;
+
+    margin-top: 4px;
+
+    background-color: white;
+
+    border: 2px solid rgb(40, 40, 40);
+
+    border-radius: 50%;
+}
+
+
+/* CONTENT */
+
+.timeline-content {
+    text-align: left;
+    padding-bottom: 4rem;
+}
+
+
+.timeline-content h2 {
+    margin: 0 0 0.4rem;
+
+    font-size: 1.5rem;
+    font-weight: 600;
+
+    color: rgb(30, 30, 30);
+}
+
+
+.timeline-content h3 {
+    margin: 0 0 1rem;
+
+    font-size: 1.1rem;
+    font-weight: 500;
+
+    color: rgb(80, 80, 80);
+}
+
+
+/* PROMOTION */
+
+.promotion {
+    display: inline-block;
+
+    padding: 0.35rem 0.8rem;
+
+    margin-bottom: 1rem;
+
+    border: 1px solid rgb(100, 100, 100);
+    border-radius: 20px;
+
+    font-size: 0.75rem;
+
+    color: rgb(50, 50, 50);
+}
+
+
+/* DESCRIPTION */
+
+.timeline-content p {
+    max-width: 650px;
+
+    line-height: 1.7;
+
+    color: rgb(80, 80, 80);
+
+    margin-bottom: 1rem;
+}
+
+
+/* BULLET POINTS */
+
+.timeline-content ul {
+    padding-left: 1.2rem;
+
+    margin-bottom: 1.3rem;
+}
+
+
+.timeline-content li {
+    margin-bottom: 0.4rem;
+
+    line-height: 1.6;
+
+    color: rgb(70, 70, 70);
+}
+
+
+/* TECHNOLOGIES */
+
+.timeline-skills {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 0.5rem;
+}
+
+
+.timeline-skills span {
+    padding: 0.35rem 0.75rem;
+
+    border: 1px solid rgb(150, 150, 150);
+
+    border-radius: 20px;
+
+    font-size: 0.75rem;
+
+    color: rgb(60, 60, 60);
+
+    transition: 0.3s ease;
+}
+
+
+.timeline-skills span:hover {
+    background-color: rgb(40, 40, 40);
+    color: white;
+    border-color: rgb(40, 40, 40);
+}
+
+#work-experience {
+    position: relative;
+    padding-bottom: 6rem;
+}
+
+#work-experience .arrow {
+     position: absolute;
+      right: -5rem;
+      bottom: 2.5rem;
+}
